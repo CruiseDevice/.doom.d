@@ -25,7 +25,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'wombat)
+(setq doom-theme 'material)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -81,6 +81,8 @@
     ace-window                          ;; Frame switcher
     use-package
     highlight-indent-guides
+    emmet-mode
+    ripgrep
     )
   )
 
@@ -139,6 +141,9 @@
   (set-frame-font font)
   (add-to-list 'default-frame-alist
                `(font . ,font)))
+
+;; enable file icons in neo-tree
+(setq neo-theme 'icons)
 
 ;; ace-window
 (global-set-key (kbd "C-x o") 'ace-window)
@@ -206,3 +211,4 @@
   (centaur-tabs-group-by-projectile-project)
   (when (member "Arial" (font-family-list))
     (centaur-tabs-change-fonts "Arial" 130)))
+
