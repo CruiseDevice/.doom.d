@@ -83,6 +83,7 @@
     highlight-indent-guides
     emmet-mode
     ripgrep
+    yasnippet-snippets
     )
   )
 
@@ -212,3 +213,10 @@
   (when (member "Arial" (font-family-list))
     (centaur-tabs-change-fonts "Arial" 130)))
 
+;; org-mode
+(setq org-support-shift-select t)
+
+;; yasnippet
+(yas-global-mode 1)
+(add-hook 'yas-minor-mode-hook (lambda ()
+                                 (yas-activate-extra-mode 'fundamental-mode)))
