@@ -84,6 +84,8 @@
     emmet-mode
     ripgrep
     yasnippet-snippets
+    exwm
+    fancy-battery
     )
   )
 
