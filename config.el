@@ -220,3 +220,24 @@
 (yas-global-mode 1)
 (add-hook 'yas-minor-mode-hook (lambda ()
                                  (yas-activate-extra-mode 'fundamental-mode)))
+
+
+;; sublime keybindings
+;; Close. was kill-region
+(global-set-key (kbd "C-w") 'kill-buffer)
+
+;; Save. was isearch-forward
+(global-set-key (kbd "C-s") 'save-buffer)
+
+;; Find file in project (via projectile) was previous-line
+(global-set-key (kbd "C-p") 'projectile-find-file)
+
+
+;; Toggle comment lines (same keybind as Sublime). This also works for regions
+(global-set-key (kbd "C-/") 'comment-line)
+
+;; Window management
+;; Split horizonal (was transpose-chars)
+(global-set-key (kbd "C-t") 'split-window-horizontally)
+(global-set-key (kbd "M-t") 'split-window-vertically)
+(global-set-key (kbd "C-S-w") 'delete-window)
