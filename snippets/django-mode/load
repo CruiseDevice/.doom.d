@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# contributor: Akash Chavan (achavan1211@gmail.com)
+# name: {% load ... %}
+# --
+{% load $0 %}

@@ -243,3 +243,4 @@
 (global-set-key (kbd "C-t") 'split-window-horizontally)
 (global-set-key (kbd "M-t") 'split-window-vertically)
 (global-set-key (kbd "C-S-w") 'delete-window)
+
